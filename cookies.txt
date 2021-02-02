@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+golden-castle.biz	TRUE	/	FALSE	1999999999	PHPSESSID	a59a2ca6770175529b6d7357c76eeefa
+

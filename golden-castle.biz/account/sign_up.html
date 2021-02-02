@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from golden-castle.biz/account/sign_up.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Aug 2020 11:36:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="assets/images/icons/favicon.html"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/parsley.css">
+<!--===============================================================================================-->
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+</head>
+<body>	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/city.jpg');" id="particles-js">
+			<div class="wrap-login100 p-t-190 p-b-30" style="z-index:100">
+                <form  class="login100-form" id="loginform" name="loginform" method="post" action="http://golden-castle.biz/account/connect/" data-parsley-validate="" autocomplete="off">
+                <input type="hidden" name="connectMode" id="connectMode" value="register">
+                <input type="hidden" name="spage" id="spage" value="root">
+                <input type="hidden" name="fpage" id="fpage" value="sign_up">
+                <input type="hidden" name="access" id="access" value="refer_id^user_id^user_name^hp_code^user_tel">
+                <input type="hidden" name="remote_user_id_check" id="remote_user_id_check" value="">
+                <input type="text" style="display: none;" />                 
+					<div class="login100-form-avatar">
+						<img src="images/logo/logo_login.png" alt="AVATAR">
+					</div>
+
+					<span class="login100-form-title" style="padding: 20px">
+						회원가입
+                    </span>
+                    
+                    					<div class="wrap-input100 m-b-10">
+                        <div class="alert alert-warning">아이디는 휴대폰 끝자리 8숫자 입니다.</div>
+					</div>
+
+					<div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="refer_id" id="refer_id" placeholder="★ 추천인아이디" required="" data-parsley-type="digits" data-parsley-length="[7, 8]" value="">
+                        <span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="user_id" id="user_id"  required="" placeholder="★ 아이디 (전화번호)" data-parsley-type="digits" data-parsley-length="[7, 8]" value="">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="user_name" id="user_name" required="" placeholder="★ 성명" value="">
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="password" name="user_pw" id="user_pw" required="" placeholder="★ 비밀번호 (숫자+영어 4~10자내외)" data-parsley-type="alphanum" data-parsley-length="[4, 15]">
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="password" name="user_pw_ok" id="user_pw_ok" required="" placeholder="★ 비밀번호 확인" data-parsley-equalto="#user_pw">
+						<span class="focus-input100"></span>
+					</div>
+                    
+
+                    <div class="wrap-input100 m-b-10">
+                                                <select id="country" name="country" class="input100">
+                                                    <option value="1" data-target="+7840" >Abkhazia</option>
+                                                    <option value="2" data-target="+93" >Afghanistan</option>
+                                                    <option value="3" data-target="+355" >Albania</option>
+                                                    <option value="4" data-target="+213" >Algeria</option>
+                                                    <option value="5" data-target="+1684" >American Samoa</option>
+                                                    <option value="6" data-target="+857" >ANAC Satellite</option>
+                                                    <option value="7" data-target="+376" >Andorra</option>
+                                                    <option value="8" data-target="+244" >Angola</option>
+                                                    <option value="9" data-target="+1264" >Anguilla</option>
+                                                    <option value="10" data-target="+1268" >Antigua and Barbuda</option>
+                                                    <option value="11" data-target="+54" >Argentina</option>
+                                                    <option value="12" data-target="+374" >Armenia</option>
+                                                    <option value="13" data-target="+297" >Aruba</option>
+                                                    <option value="14" data-target="+247" >Ascension</option>
+                                                    <option value="15" data-target="+61" >Australia</option>
+                                                    <option value="16" data-target="+672" >Australian External Territories</option>
+                                                    <option value="17" data-target="+43" >Austria</option>
+                                                    <option value="18" data-target="+994" >Azerbaijan</option>
+                                                    <option value="19" data-target="+1242" >Bahamas</option>
+                                                    <option value="20" data-target="+973" >Bahrain</option>
+                                                    <option value="21" data-target="+880" >Bangladesh</option>
+                                                    <option value="22" data-target="+1246" >Barbados</option>
+                                                    <option value="23" data-target="+1268" >Barbuda</option>
+                                                    <option value="24" data-target="+375" >Belarus</option>
+                                                    <option value="25" data-target="+32" >Belgium</option>
+                                                    <option value="26" data-target="+501" >Belize</option>
+                                                    <option value="27" data-target="+229" >Benin</option>
+                                                    <option value="28" data-target="+1441" >Bermuda</option>
+                                                    <option value="29" data-target="+975" >Bhutan</option>
+                                                    <option value="30" data-target="+591" >Bolivia</option>
+                                                    <option value="31" data-target="+387" >Bosnia and Herzegovina</option>
+                                                    <option value="32" data-target="+267" >Botswana</option>
+                                                    <option value="33" data-target="+55" >Brazil</option>
+                                                    <option value="34" data-target="+246" >British Indian Ocean Territory</option>
+                                                    <option value="35" data-target="+1284" >British Virgin Islands</option>
+                                                    <option value="36" data-target="+673" >Brunei</option>
+                                                    <option value="37" data-target="+359" >Bulgaria</option>
+                                                    <option value="38" data-target="+226" >Burkina Faso</option>
+                                                    <option value="39" data-target="+257" >Burundi</option>
+                                                    <option value="40" data-target="+855" >Cambodia</option>
+                                                    <option value="41" data-target="+237" >Cameroon</option>
+                                                    <option value="42" data-target="+1" >Canada</option>
+                                                    <option value="43" data-target="+238" >Cape Verde</option>
+                                                    <option value="44" data-target="+1345" >Cayman Islands</option>
+                                                    <option value="45" data-target="+236" >Central African Republic</option>
+                                                    <option value="46" data-target="+235" >Chad</option>
+                                                    <option value="47" data-target="+64" >Chatham Island (New Zealand)</option>
+                                                    <option value="48" data-target="+56" >Chile</option>
+                                                    <option value="49" data-target="+86" >China</option>
+                                                    <option value="50" data-target="+61" >Christmas Island</option>
+                                                    <option value="51" data-target="+61" >Cocos-Keeling Islands</option>
+                                                    <option value="52" data-target="+57" >Colombia</option>
+                                                    <option value="53" data-target="+269" >Comoros</option>
+                                                    <option value="54" data-target="+242" >Congo</option>
+                                                    <option value="55" data-target="+242" >Congo - Brazzaville</option>
+                                                    <option value="56" data-target="+243" >Congo, Dem. Rep. of (Zaire)</option>
+                                                    <option value="57" data-target="+243" >Congo - Kinshasa</option>
+                                                    <option value="58" data-target="+682" >Cook Islands</option>
+                                                    <option value="59" data-target="+506" >Costa Rica</option>
+                                                    <option value="60" data-target="+225" >Ivory Coast</option>
+                                                    <option value="61" data-target="+385" >Croatia</option>
+                                                    <option value="62" data-target="+53" >Cuba</option>
+                                                    <option value="63" data-target="+5399" >Cuba (Guantanamo Bay)</option>
+                                                    <option value="64" data-target="+599" >Curaao</option>
+                                                    <option value="65" data-target="+357" >Cyprus</option>
+                                                    <option value="66" data-target="+420" >Czech Republic</option>
+                                                    <option value="67" data-target="+45" >Denmark</option>
+                                                    <option value="68" data-target="+246" >Diego Garcia</option>
+                                                    <option value="69" data-target="+253" >Djibouti</option>
+                                                    <option value="70" data-target="+1767" >Dominica</option>
+                                                    <option value="71" data-target="+1809" >Dominican Republic</option>
+                                                    <option value="72" data-target="+670" >East Timor</option>
+                                                    <option value="73" data-target="+56" >Easter Island</option>
+                                                    <option value="74" data-target="+593" >Ecuador</option>
+                                                    <option value="75" data-target="+20" >Egypt</option>
+                                                    <option value="76" data-target="+503" >El Salvador</option>
+                                                    <option value="77" data-target="+8812" >Ellipso (Mobile Satellite service)</option>
+                                                    <option value="78" data-target="+88213" >EMSAT (Mobile Satellite service)</option>
+                                                    <option value="79" data-target="+240" >Equatorial Guinea</option>
+                                                    <option value="80" data-target="+291" >Eritrea</option>
+                                                    <option value="81" data-target="+372" >Estonia</option>
+                                                    <option value="82" data-target="+251" >Ethiopia</option>
+                                                    <option value="83" data-target="+500" >Falkland Islands</option>
+                                                    <option value="84" data-target="+298" >Faroe Islands</option>
+                                                    <option value="85" data-target="+679" >Fiji</option>
+                                                    <option value="86" data-target="+358" >Finland</option>
+                                                    <option value="87" data-target="+33" >France</option>
+                                                    <option value="88" data-target="+596" >French Antilles</option>
+                                                    <option value="89" data-target="+594" >French Guiana</option>
+                                                    <option value="90" data-target="+689" >French Polynesia</option>
+                                                    <option value="91" data-target="+241" >Gabon</option>
+                                                    <option value="92" data-target="+220" >Gambia</option>
+                                                    <option value="93" data-target="+995" >Georgia</option>
+                                                    <option value="94" data-target="+49" >Germany</option>
+                                                    <option value="95" data-target="+233" >Ghana</option>
+                                                    <option value="96" data-target="+350" >Gibraltar</option>
+                                                    <option value="97" data-target="+881" >Global Mobile Satellite System (GMSS)</option>
+                                                    <option value="98" data-target="+8818" >Globalstar (Mobile Satellite Service)</option>
+                                                    <option value="99" data-target="+30" >Greece</option>
+                                                    <option value="100" data-target="+299" >Greenland</option>
+                                                    <option value="101" data-target="+1473" >Grenada</option>
+                                                    <option value="102" data-target="+590" >Guadeloupe</option>
+                                                    <option value="103" data-target="+1671" >Guam</option>
+                                                    <option value="104" data-target="+5399" >Guantanamo Bay</option>
+                                                    <option value="105" data-target="+502" >Guatemala</option>
+                                                    <option value="106" data-target="+224" >Guinea</option>
+                                                    <option value="107" data-target="+245" >Guinea-Bissau</option>
+                                                    <option value="108" data-target="+592" >Guyana</option>
+                                                    <option value="109" data-target="+509" >Haiti</option>
+                                                    <option value="110" data-target="+504" >Honduras</option>
+                                                    <option value="111" data-target="+852" >Hong Kong</option>
+                                                    <option value="112" data-target="+36" >Hungary</option>
+                                                    <option value="113" data-target="+354" >Iceland</option>
+                                                    <option value="114" data-target="+8810" >ICO Global (Mobile Satellite Service)</option>
+                                                    <option value="115" data-target="+91" >India</option>
+                                                    <option value="116" data-target="+62" >Indonesia</option>
+                                                    <option value="117" data-target="+870" >Inmarsat SNAC</option>
+                                                    <option value="118" data-target="+800" >International Freephone Service</option>
+                                                    <option value="119" data-target="+808" >International Shared Cost Service (ISCS)</option>
+                                                    <option value="120" data-target="+98" >Iran</option>
+                                                    <option value="121" data-target="+964" >Iraq</option>
+                                                    <option value="122" data-target="+353" >Ireland</option>
+                                                    <option value="123" data-target="+8816" >Iridium (Mobile Satellite service)</option>
+                                                    <option value="124" data-target="+972" >Israel</option>
+                                                    <option value="125" data-target="+39" >Italy</option>
+                                                    <option value="126" data-target="+1876" >Jamaica</option>
+                                                    <option value="127" data-target="+81" >Japan</option>
+                                                    <option value="128" data-target="+962" >Jordan</option>
+                                                    <option value="129" data-target="+76" >Kazakhstan</option>
+                                                    <option value="130" data-target="+254" >Kenya</option>
+                                                    <option value="131" data-target="+686" >Kiribati</option>
+                                                    <option value="132" data-target="+850" >North Korea</option>
+                                                    <option value="133" data-target="+82" selected>South Korea</option>
+                                                    <option value="134" data-target="+965" >Kuwait</option>
+                                                    <option value="135" data-target="+996" >Kyrgyzstan</option>
+                                                    <option value="136" data-target="+856" >Laos</option>
+                                                    <option value="137" data-target="+371" >Latvia</option>
+                                                    <option value="138" data-target="+961" >Lebanon</option>
+                                                    <option value="139" data-target="+266" >Lesotho</option>
+                                                    <option value="140" data-target="+231" >Liberia</option>
+                                                    <option value="141" data-target="+218" >Libya</option>
+                                                    <option value="142" data-target="+423" >Liechtenstein</option>
+                                                    <option value="143" data-target="+370" >Lithuania</option>
+                                                    <option value="144" data-target="+352" >Luxembourg</option>
+                                                    <option value="145" data-target="+853" >Macau SAR China</option>
+                                                    <option value="146" data-target="+389" >Macedonia</option>
+                                                    <option value="147" data-target="+261" >Madagascar</option>
+                                                    <option value="148" data-target="+265" >Malawi</option>
+                                                    <option value="149" data-target="+60" >Malaysia</option>
+                                                    <option value="150" data-target="+960" >Maldives</option>
+                                                    <option value="151" data-target="+223" >Mali</option>
+                                                    <option value="152" data-target="+356" >Malta</option>
+                                                    <option value="153" data-target="+692" >Marshall Islands</option>
+                                                    <option value="154" data-target="+596" >Martinique</option>
+                                                    <option value="155" data-target="+222" >Mauritania</option>
+                                                    <option value="156" data-target="+230" >Mauritius</option>
+                                                    <option value="157" data-target="+262" >Mayotte</option>
+                                                    <option value="158" data-target="+52" >Mexico</option>
+                                                    <option value="159" data-target="+691" >Micronesia</option>
+                                                    <option value="160" data-target="+1808" >Midway Island</option>
+                                                    <option value="161" data-target="+373" >Moldova</option>
+                                                    <option value="162" data-target="+377" >Monaco</option>
+                                                    <option value="163" data-target="+976" >Mongolia</option>
+                                                    <option value="164" data-target="+382" >Montenegro</option>
+                                                    <option value="165" data-target="+1664" >Montserrat</option>
+                                                    <option value="166" data-target="+212" >Morocco</option>
+                                                    <option value="167" data-target="+258" >Mozambique</option>
+                                                    <option value="168" data-target="+95" >Myanmar</option>
+                                                    <option value="169" data-target="+264" >Namibia</option>
+                                                    <option value="170" data-target="+674" >Nauru</option>
+                                                    <option value="171" data-target="+977" >Nepal</option>
+                                                    <option value="172" data-target="+31" >Netherlands</option>
+                                                    <option value="173" data-target="+599" >Netherlands Antilles</option>
+                                                    <option value="174" data-target="+1869" >Nevis</option>
+                                                    <option value="175" data-target="+687" >New Caledonia</option>
+                                                    <option value="176" data-target="+64" >New Zealand</option>
+                                                    <option value="177" data-target="+505" >Nicaragua</option>
+                                                    <option value="178" data-target="+227" >Niger</option>
+                                                    <option value="179" data-target="+234" >Nigeria</option>
+                                                    <option value="180" data-target="+683" >Niue</option>
+                                                    <option value="181" data-target="+672" >Norfolk Island</option>
+                                                    <option value="182" data-target="+1670" >Northern Mariana Islands</option>
+                                                    <option value="183" data-target="+47" >Norway</option>
+                                                    <option value="184" data-target="+968" >Oman</option>
+                                                    <option value="185" data-target="+92" >Pakistan</option>
+                                                    <option value="186" data-target="+680" >Palau</option>
+                                                    <option value="187" data-target="+970" >Palestinian territories</option>
+                                                    <option value="188" data-target="+507" >Panama</option>
+                                                    <option value="189" data-target="+675" >Papua New Guinea</option>
+                                                    <option value="190" data-target="+595" >Paraguay</option>
+                                                    <option value="191" data-target="+51" >Peru</option>
+                                                    <option value="192" data-target="+63" >Philippines</option>
+                                                    <option value="193" data-target="+48" >Poland</option>
+                                                    <option value="194" data-target="+351" >Portugal</option>
+                                                    <option value="195" data-target="+1787" >Puerto Rico</option>
+                                                    <option value="196" data-target="+974" >Qatar</option>
+                                                    <option value="197" data-target="+262" >Runion</option>
+                                                    <option value="198" data-target="+40" >Romania</option>
+                                                    <option value="199" data-target="+7" >Russia</option>
+                                                    <option value="200" data-target="+250" >Rwanda</option>
+                                                    <option value="201" data-target="+590" >Saint Barthlemy</option>
+                                                    <option value="202" data-target="+290" >Saint Helena</option>
+                                                    <option value="203" data-target="+1869" >Saint Kitts and Nevis</option>
+                                                    <option value="204" data-target="+1758" >Saint Lucia</option>
+                                                    <option value="205" data-target="+590" >Saint Martin</option>
+                                                    <option value="206" data-target="+508" >Saint Pierre and Miquelon</option>
+                                                    <option value="207" data-target="+1784" >Saint Vincent and the Grenadines</option>
+                                                    <option value="208" data-target="+685" >Samoa</option>
+                                                    <option value="209" data-target="+378" >San Marino</option>
+                                                    <option value="210" data-target="+239" >So Tom and Prncipe</option>
+                                                    <option value="211" data-target="+966" >Saudi Arabia</option>
+                                                    <option value="212" data-target="+221" >Senegal</option>
+                                                    <option value="213" data-target="+381" >Serbia</option>
+                                                    <option value="214" data-target="+248" >Seychelles</option>
+                                                    <option value="215" data-target="+232" >Sierra Leone</option>
+                                                    <option value="216" data-target="+65" >Singapore</option>
+                                                    <option value="217" data-target="+599" >Sint Maarten</option>
+                                                    <option value="218" data-target="+421" >Slovakia</option>
+                                                    <option value="219" data-target="+386" >Slovenia</option>
+                                                    <option value="220" data-target="+677" >Solomon Islands</option>
+                                                    <option value="221" data-target="+252" >Somalia</option>
+                                                    <option value="222" data-target="+27" >South Africa</option>
+                                                    <option value="223" data-target="+500" >South Georgia and the South Sandwich Islands</option>
+                                                    <option value="224" data-target="+34" >Spain</option>
+                                                    <option value="225" data-target="+94" >Sri Lanka</option>
+                                                    <option value="226" data-target="+249" >Sudan</option>
+                                                    <option value="227" data-target="+597" >Suriname</option>
+                                                    <option value="228" data-target="+268" >Swaziland</option>
+                                                    <option value="229" data-target="+46" >Sweden</option>
+                                                    <option value="230" data-target="+41" >Switzerland</option>
+                                                    <option value="231" data-target="+963" >Syria</option>
+                                                    <option value="232" data-target="+886" >Taiwan</option>
+                                                    <option value="233" data-target="+992" >Tajikistan</option>
+                                                    <option value="234" data-target="+255" >Tanzania</option>
+                                                    <option value="235" data-target="+66" >Thailand</option>
+                                                    <option value="236" data-target="+88216" >Thuraya (Mobile Satellite service)</option>
+                                                    <option value="237" data-target="+670" >Timor-Leste</option>
+                                                    <option value="238" data-target="+228" >Togo</option>
+                                                    <option value="239" data-target="+690" >Tokelau</option>
+                                                    <option value="240" data-target="+676" >Tonga</option>
+                                                    <option value="241" data-target="+1868" >Trinidad and Tobago</option>
+                                                    <option value="242" data-target="+216" >Tunisia</option>
+                                                    <option value="243" data-target="+90" >Turkey</option>
+                                                    <option value="244" data-target="+993" >Turkmenistan</option>
+                                                    <option value="245" data-target="+1649" >Turks and Caicos Islands</option>
+                                                    <option value="246" data-target="+688" >Tuvalu</option>
+                                                    <option value="247" data-target="+256" >Uganda</option>
+                                                    <option value="248" data-target="+380" >Ukraine</option>
+                                                    <option value="249" data-target="+971" >United Arab Emirates</option>
+                                                    <option value="250" data-target="+44" >United Kingdom</option>
+                                                    <option value="251" data-target="+1" >United States</option>
+                                                    <option value="252" data-target="+878" >Universal Personal Telecommunications (UPT)</option>
+                                                    <option value="253" data-target="+598" >Uruguay</option>
+                                                    <option value="254" data-target="+1340" >U.S. Virgin Islands</option>
+                                                    <option value="255" data-target="+998" >Uzbekistan</option>
+                                                    <option value="256" data-target="+678" >Vanuatu</option>
+                                                    <option value="257" data-target="+39066" >Vatican</option>
+                                                    <option value="258" data-target="+58" >Venezuela</option>
+                                                    <option value="259" data-target="+84" >Vietnam</option>
+                                                    <option value="260" data-target="+1808" >Wake Island</option>
+                                                    <option value="261" data-target="+681" >Wallis and Futuna</option>
+                                                    <option value="262" data-target="+967" >Yemen</option>
+                                                    <option value="263" data-target="+260" >Zambia</option>
+                                                    <option value="264" data-target="+255" >Zanzibar</option>
+                                                    <option value="265" data-target="+263" >Zimbabwe</option>
+                                                </select> 
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="user_tel" id="user_tel" required="" data-parsley-type="digits"  data-parsley-length="[10, 11]" placeholder="★ 전화번호 ('-'없이 입력)" value=""> 
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="bank" id="bank" required="" placeholder="★ 은행"> 
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="account" id="account" required="" placeholder="★ 계좌번호('-'없이입력)" data-parsley-type="digits"> 
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="depositor" id="depositor" required="" placeholder="★ 예금주"> 
+						<span class="focus-input100"></span>
+                    </div>
+                                        
+                    <div class="wrap-input100 m-b-10">
+						<input class="input100" type="email" name="email" placeholder="이메일">
+						<span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 m-b-10">
+                        <input class="input100" type="text" name="litecoin" id="litecoin" placeholder="라이트코인"> 
+						<span class="focus-input100"></span>
+                    </div>
+                    
+                    <div class="wrap-input100 m-b-10">
+                        <div class="input100" style="height:200px">
+                            <div style="height:200px;overflow-y:scroll">
+                        <p>개인간의 P2P거래에 있어서 불특정다수의 회원상호간에 캐릭터 매매 거래시 발생할 수 있는 입금부분에 관하여 미입금으로 인한 피해도 있음을 확실하게 인지하였으며 누구의 강요에 의하지 않고 본인의 판단에 의하여 계좌번호등록과 폰번호 인증으로 회원가입을 하기 위하여 동의에 체크합니다.</p>
+                        <p>개인간의 P2p거래에 있어서 회원간의 불특정다수의 입금부분에 관해 미입금으로 인한 피해도 있음을 인지하고 회원에 가입하며 동의에 체크합니다.</p>
+                        <p>추후 회원상호간 캐릭터 매매 거래후 어떤 상황발생으로 인한 손익에 관한 민.형사상 모든 책임은 본인에게 있음을 확약하며 회원가입에 동의합니다.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap-input100 m-b-10 text-center">
+						<input type="checkbox" type="checkbox" id="agree" name="agree"  required="" value="true"><span class="text-warning"> 위의 사항을 숙지하였습니다.</span>
+                    </div>
+
+					<div class="container-login100-form-btn p-t-10">
+						<button style="submit" class="login100-form-btn btn-green">
+							회원가입
+						</button>
+					</div>
+
+					<div class="container-login100-form-btn p-t-10">
+						<a href="login.html" class="login100-form-btn btn-blue">
+							로그인
+						</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+    
+
+<!--===============================================================================================-->
+<script src="assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/app.js"></script>
+    <script src="assets/vendor/parsley/parsley.min.js"></script>
+	<script src="assets/vendor/parsley/lang/ko.js"></script>
+</body>
+
+<!-- Mirrored from golden-castle.biz/account/sign_up.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Aug 2020 11:36:58 GMT -->
+</html>
